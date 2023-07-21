@@ -1,0 +1,11 @@
+console.log("Texto Simples");
+console.log(typeof "Texto Simples");
+console.log(`Isso é uma String`);
+console.log('Isso é uma String');
+console.log("\n");
+console.log("\nPulou uma linha, eu acho");
+console.log("\nPrimeira Linha \nSegunda Linha");
+console.log("Meu nome é 'Alfredo'");
+console.log('Meu nome é "Alfredo"');
+console.log(`A multiplicação de 5 por 3 é ${5*3}`);
+console.log("Alfredo" + " " + "de" + " " + "Morais");
