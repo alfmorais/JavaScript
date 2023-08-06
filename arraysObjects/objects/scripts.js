@@ -34,3 +34,15 @@ console.log(car.brand, secondCar.brand);
 
 secondCar.brand = "Honda";
 console.log(car.brand, secondCar.brand);
+
+// Destruction
+
+let carInterface = {
+    rodas: 4,
+    portas: 4,
+    tetoSolar: true,
+    motor: "2.0"
+}
+
+const {rodas: vRodas, portas: vPortas, tetoSolar, vTetoSolar, motor: vMotor} = carInterface;
+console.log(vMotor, vPortas, vRodas, vTetoSolar);
