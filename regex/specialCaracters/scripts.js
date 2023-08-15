@@ -109,3 +109,29 @@ let frutas = /\d+ (bananas|maças|laranjas)/;
 console.log(frutas.test("10 bananas"));
 console.log(frutas.test("25 batatas"));
 console.log(frutas.test("8 laranjas"));
+
+// Validando um domínio
+
+let validarDominio = /[?www.]\w+\.com|com.br/;
+
+console.log(validarDominio.test("www.google.com"));
+console.log(validarDominio.test("www.teste"));
+console.log(validarDominio.test("teste.com"));
+console.log(validarDominio.test("www.horadecodar.com.br"));
+
+
+// Validando um e-mail
+let validarEmail = /\w+@\w+\.\w+/;
+
+console.log(validarEmail.test("teste@email.com"));
+console.log(validarEmail.test("email@email"));
+console.log(validarEmail.test("ronaldo@yahoo.com.br"));
+console.log(validarEmail.test("email.com"));
+
+// Validando uma data de nascimento
+let validarDataDeNascimento = /[01-31]{2}[/][01-12]{2}[/][1900-2500]{4}/;
+
+console.log(validarDataDeNascimento.test("25/12/2015"));
+console.log(validarDataDeNascimento.test("25/12/15"));
+console.log(validarDataDeNascimento.test("2/2/2015"));
+console.log(validarDataDeNascimento.test("30/02/1999"));
